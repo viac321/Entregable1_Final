@@ -1,0 +1,74 @@
+.quotebox{
+ background-color: #574345;
+ color:#f2ecdc;
+ max-width: 60vh;
+ display: grid;
+ gap: 10px;
+ justify-content: center;
+ border-radius: 5% 5%;
+ opacity: 65%;
+ height: auto;
+ border: 1px solid;
+ width: 400px;
+ height: min-content;
+ border: 1px solid;
+ padding: 1rem; 
+ border-style: dashed;
+ object-fit:hover;
+}
+
+.quote_author {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    background-color: #574345;
+    color:#f2ecdc;
+    transform: translateX(-50%);  
+    border-radius: 50% 20% / 10% 40%;  
+    width: 200px;
+    height: min-content;
+    border: 1px solid;
+    padding: 1rem; 
+}
+.quotebox_box:hover{
+   transform: scale(1.1) 
+}
+
+.quotebox_btn{
+   gap: 30px;
+   width: min-content;  
+   position: relative;
+   top: 0%;
+   left: 43%;
+   border-radius: 5px;
+   background-color: #947280;
+   animation: wiggle 5s linear infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
+
+.quotebox_title{
+ color: #feffd4;
+}
